@@ -162,7 +162,7 @@ class RegisterForm extends Component {
         <StyledButton
           type="primary"
           onClick={this.onSubmit}
-          disabled={!this.state.validForm}>
+          disabled={!this.validateForm()}>
           Submit
         </StyledButton>
       </StyledForm>
@@ -196,6 +196,7 @@ const StyledButton = styled(Button)`
   margin: 20px auto;
   display: block;
   width: 150px;
+  text-transform: uppercase;
 `;
 
 export default RegisterForm;
